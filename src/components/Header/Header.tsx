@@ -1,10 +1,11 @@
 import React from "react";
 
 export interface Props {
-  username?: string | null;
+  username: string;
+  setUsername: Function;
 }
 
-function Header({ username }: Props) {
+function Header({ username, setUsername }: Props) {
   return (
     <section className="header">
       <div className="header__logo-wrapper">
@@ -12,8 +13,7 @@ function Header({ username }: Props) {
         <span className="header__subtitle">to JS master</span>
       </div>
       <div className="header__login-wrapper">
-        {username ? <>{username} logout</>
-        : "login"}
+        {username} <button onClick={() => setUsername("")}>Logout</button>
       </div>
     </section>
   );

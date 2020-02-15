@@ -1,3 +1,21 @@
 @import './normalize';
+@import './variables';
+
 @import '../components/Header/header';
 @import '../components/Login/login';
+@import '../components//Chat/chat';
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: $background;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
