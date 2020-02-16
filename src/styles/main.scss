@@ -4,13 +4,14 @@
 @import '../components/Header/header';
 @import '../components/Login/login';
 @import '../components//Chat/chat';
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     background-color: $background;
     max-width: 1440px;
+    height:100%;
     margin: 0 auto;
   }
   
@@ -18,4 +19,11 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Quicksand', sans-serif;
   }
