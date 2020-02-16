@@ -4,16 +4,17 @@
   border-bottom: 5px solid $ship;
 
   &__header {
-    display: flex;
-    justify-content: center;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid $mercury;
     position: relative;
-    height: 50px;
-
   }
 
   &__header-img {
     position: absolute;
-    left: 0;
+    left: 5px;
+    transform: translateY(10px);
   }
 
   &__header-title {
@@ -32,6 +33,7 @@
   width: 90%;
   display: flex;
   flex-direction: column;
+
   &__item {
     display: flex;
     justify-content: center;
@@ -39,10 +41,12 @@
     width: 100px;
     height: 100px;
     background: red;
+
     &--User1 {
       text-align: left;
       justify-self: flex-end;
     }
+
     &--User2 {
       text-align: right;
       align-self: flex-end;

@@ -12,9 +12,14 @@
     margin-top:20px;
   }
   &__login-username {
-
+    font-weight: bold;
   }
   &__logout-button {
+    margin: 0;
+    background: none;
+    border: none;
     color: $chambray;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
