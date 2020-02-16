@@ -1,5 +1,6 @@
 import React from "react";
 import LoginButton from "./LoginButton";
+import { Logo } from "../Logo/Logo";
 
 export interface Props {
   setUsername: Function;
@@ -9,8 +10,7 @@ function Login({ setUsername }: Props) {
   return (
     <section className="login">
       <div className="login__title-wrapper">
-        <h2 className="login__title">Chat</h2>
-        <p className="login__subtitle">to JS master</p>
+        <Logo />
       </div>
       <div className="login__button-wrapper">
         <LoginButton label="John Doe" setUsername={setUsername} />
@@ -22,3 +22,5 @@ function Login({ setUsername }: Props) {
 }
 
 export default Login;
+
+

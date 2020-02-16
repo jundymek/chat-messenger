@@ -1,4 +1,6 @@
 import React from "react";
+import { Logo } from "../Logo/Logo";
+import { UserImage } from "../UserImage/UserImage";
 
 export interface Props {
   username: string;
@@ -9,11 +11,12 @@ function Header({ username, setUsername }: Props) {
   return (
     <section className="header">
       <div className="header__logo-wrapper">
-        <h1 className="header__logo">Chat</h1>
-        <span className="header__subtitle">to JS master</span>
+        <Logo />
       </div>
       <div className="header__login-wrapper">
-        {username} <button onClick={() => setUsername("")}>Logout</button>
+        <span className="header__login-username">{username}</span> 
+        <button className="header__logout-button" onClick={() => setUsername("")}>Logout</button>
+        <UserImage isBlue />
       </div>
     </section>
   );

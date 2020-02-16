@@ -1,8 +1,20 @@
 .header {
   display: flex;
   justify-content: space-between;
-  &__logo {
-    margin: 0;
-    padding: 0;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  &__login-wrapper {
+    display: flex;
+    align-items: center;
+    color: $chambray;
+    font-size: 12px;
+    margin-top:20px;
+  }
+  &__login-username {
+
+  }
+  &__logout-button {
+    color: $chambray;
   }
 }
