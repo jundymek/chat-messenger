@@ -11,6 +11,7 @@
   border-bottom: 5px solid $ship;
   overflow-y: auto;
   padding-bottom: 20px;
+
   &__header {
     display: block;
     height: 70px;
@@ -30,10 +31,8 @@
     margin: 0;
     padding: 0;
 
-    &__messages {
-      display: flex;
-    }
   }
+
   &__message-form {
     display: flex;
     justify-content: center;
@@ -54,12 +53,11 @@
   margin-top: 30%;
   padding: 0;
   flex-direction: column;
+
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: auto;
     max-width: 60%;
+    overflow-wrap: break-word;
     padding: 20px;
     border-radius: 20px;
     font-weight: bold;
@@ -70,8 +68,8 @@
       background: $gallery;
       margin: 20px 0 0 20px;
       color: $boulder;
-      direction:ltr;
-      text-align:justify;
+      direction: ltr;
+      text-align: justify;
     }
 
     &--User2 {
@@ -80,8 +78,8 @@
       margin: 20px 20px 0 0;
       border-bottom-right-radius: 0;
       color: $white;
-      direction:rtl;
-      text-align:justify;
+      direction: rtl;
+      text-align: justify;
     }
   }
 }

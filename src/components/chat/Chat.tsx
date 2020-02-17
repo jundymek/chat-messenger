@@ -8,11 +8,11 @@ interface Props {
   username: string;
   setUsername: Function;
   allMessages: string[][];
-  setAllMessages: Function;
+  setAllMessages: (cb: (prevState: string[][]) => string[][]) => void;
 }
 
 function Chat({ username, setUsername, allMessages, setAllMessages }: Props) {
-
+  
   return (
     <div className="chat-window">
       <Header username={username} setUsername={setUsername} />

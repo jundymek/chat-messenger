@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { UserImage } from "../UserImage/UserImage";
 
 export interface Props {
-  label: String;
-  setUsername: Function;
+  label: string;
+  setUsername: (username: string) => void;
 }
 
 function LoginButton({ label, setUsername }: Props) {
