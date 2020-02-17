@@ -1,18 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 import Header from "../Header/Header";
 import { UserImage } from "../UserImage/UserImage";
 import { Messages } from "./Messages";
 import { MessageForm } from "./MessageForm";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 interface Props {
   username: string;
-  setUsername: Function;
-  allMessages: string[][];
-  setAllMessages: (cb: (prevState: string[][]) => string[][]) => void;
+  setUsername: (username: string) => void;
 }
 
-function Chat({ username, setUsername, allMessages, setAllMessages }: Props) {
-  
+function Chat({ username, setUsername }: Props) {
+  const [allMessages, setAllMessages] = useLocalStorage("chatMessages", []);
+
   return (
     <div className="chat-window">
       <Header username={username} setUsername={setUsername} />
@@ -31,7 +31,3 @@ function Chat({ username, setUsername, allMessages, setAllMessages }: Props) {
 }
 
 export default Chat;
-
-
-
-
