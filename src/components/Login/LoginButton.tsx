@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { UserImage } from "../UserImage/UserImage";
 
 export interface Props {
@@ -9,19 +9,20 @@ export interface Props {
 function LoginButton({ label, setUsername }: Props) {
   const [isBlue, setisBlue] = useState<boolean>(false);
 
-  const handleMouseOver = () => {
-    setisBlue(prevState => !prevState);
-  };
+  useEffect(() => {
+    if(label === "John Doe") {
+      setisBlue(true)
+    }
+  }, [label])
 
   const handleClick = () => {
-    setisBlue(prevState => !prevState);
     setUsername(label);
   };
 
   return (
     <button
-      onPointerLeave={handleMouseOver}
-      onPointerEnter={handleMouseOver}
+      // onPointerLeave={handleMouseOver}
+      // onPointerEnter={handleMouseOver}
       className="login__button"
       onClick={handleClick}
     >
