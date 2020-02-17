@@ -14,7 +14,7 @@ function Login({ setUsername }: Props) {
       </div>
       <div className="login__button-wrapper">
         <LoginButton label="John Doe" setUsername={setUsername} />
-        <LoginButton label="John Smitch" setUsername={setUsername} />
+        <LoginButton label="John Smith" setUsername={setUsername} />
       </div>
       <div className="login__footer">Choice your account and start conversation</div>
     </section>

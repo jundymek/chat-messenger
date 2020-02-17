@@ -1,7 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Header from "../Header/Header";
 import { UserImage } from "../UserImage/UserImage";
 import { Messages } from "./Messages";
+import { MessageForm } from "./MessageForm";
 
 interface Props {
   username: string;
@@ -11,33 +12,26 @@ interface Props {
 }
 
 function Chat({ username, setUsername, allMessages, setAllMessages }: Props) {
-  const messageInput = useRef(null);
-  const [message, setMessage] = useState<string>("");
 
-  const handleSubmit = (e: any, username: string, message: string) => {
-    e.preventDefault();
-    setAllMessages((prevState: string[][]) => [...prevState, [username, message]]);
-  };
-  
   return (
-    <>
+    <div className="chat-window">
       <Header username={username} setUsername={setUsername} />
       <section className="chat">
         <div className="chat__header">
-          <div className="chat__header-img"><UserImage isBlue={false} /></div>
-          <h5 className="chat__header-title">{username === "John Doe" ? "John Smitch" : "John Doe"}</h5>
+          <div className="chat__header-img">
+            <UserImage isBlue={false} />
+          </div>
+          <h5 className="chat__header-title">{username === "John Doe" ? "John Smith" : "John Doe"}</h5>
         </div>
         <Messages allMessages={allMessages} />
-        <form onSubmit={e => handleSubmit(e, username, message)}>
-          <input type="text" ref={messageInput} onChange={(e: any) => setMessage(e.target.value)} />
-          <button>Submit</button>
-        </form>
       </section>
-    </>
+      <MessageForm username={username} allMessages={allMessages} setAllMessages={setAllMessages} />
+    </div>
   );
 }
 
 export default Chat;
+
 
 
 

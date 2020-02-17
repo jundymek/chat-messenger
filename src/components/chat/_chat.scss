@@ -1,8 +1,16 @@
+.chat-window {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .chat {
   background: $white;
   margin-top: 20px;
+  height: 100%;
   border-bottom: 5px solid $ship;
-
+  overflow-y: auto;
+  padding-bottom: 20px;
   &__header {
     display: block;
     height: 70px;
@@ -26,30 +34,54 @@
       display: flex;
     }
   }
+  &__message-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    color: $white;
+    font-size: 20px;
+    background: $boulder;
+  }
 }
 
 .messages {
   list-style-type: none;
-  width: 90%;
+  width: 100%;
   display: flex;
+  margin: 0;
+  margin-top: 30%;
+  padding: 0;
   flex-direction: column;
-
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
-    background: red;
+    width: auto;
+    max-width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+
 
     &--User1 {
-      text-align: left;
-      justify-self: flex-end;
+      align-self: flex-start;
+      background: $gallery;
+      margin: 20px 0 0 20px;
+      color: $boulder;
+      direction:ltr;
+      text-align:justify;
     }
 
     &--User2 {
-      text-align: right;
       align-self: flex-end;
+      background: $ship;
+      margin: 20px 20px 0 0;
+      border-bottom-right-radius: 0;
+      color: $white;
+      direction:rtl;
+      text-align:justify;
     }
   }
 }
