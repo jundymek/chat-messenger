@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 100vh;
   position: relative;
+
   &__button-wrapper {
     display: flex;
   }
@@ -15,6 +16,10 @@
     border-bottom: 0px solid $chambray;
     transition: border 1s ease;
     position: relative;
+
+    &--blue {
+      background: $alabaster;
+    }
 
     &::after {
       position: absolute;
@@ -34,7 +39,7 @@
         max-width: 100%;
       }
 
-      background: $alabaster;
+
     }
   }
 

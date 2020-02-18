@@ -21,9 +21,7 @@ function LoginButton({ label, setUsername }: Props) {
 
   return (
     <button
-      // onPointerLeave={handleMouseOver}
-      // onPointerEnter={handleMouseOver}
-      className="login__button"
+      className={isBlue ? `login__button login__button--blue` : `login__button`}
       onClick={handleClick}
     >
       <div className="login__user-wrapper">
