@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import { UserImage } from "../UserImage/UserImage";
 import { Messages } from "./Messages";
-import { MessageForm } from "./MessageForm";
+import { MessageForm } from "../MessageForm/MessageForm";
 import useLocalStorage from "../../hooks/useLocalStorage";
 
 interface Props {
