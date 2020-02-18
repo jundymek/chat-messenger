@@ -15,11 +15,13 @@
     font-weight: bold;
   }
   &__logout-button {
-    margin: 0;
     background: none;
     border: none;
     color: $chambray;
     font-weight: bold;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
   }
 }
