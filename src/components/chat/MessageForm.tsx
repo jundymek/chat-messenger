@@ -26,7 +26,7 @@ export function MessageForm({ username, allMessages, setAllMessages }: Props) {
         ref={inputValue}
         onChange={(e: any) => setMessage(e.target.value)}
       />
-      <button className="message-form__button">send</button>
+      <div className="message-form__button-wrapper"><button className="message-form__button">send</button></div>
     </form>
   );
 }

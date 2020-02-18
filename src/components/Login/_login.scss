@@ -9,7 +9,7 @@
 
   &__button {
     width: 50%;
-    height: 60vh;
+    height: 70vh;
     background: $white;
     border: none;
     border-bottom: 0px solid $chambray;
@@ -47,6 +47,7 @@
     color: $white;
     font-size: 20px;
     background: $boulder;
+    font-weight: bold;
   }
 
   &__title-wrapper {
@@ -66,7 +67,7 @@
     height: 50px;
     fill: $dorado;
 
-    &--hovered {
+    &--blue {
       fill: $chambray;
     }
   }
@@ -74,7 +75,7 @@
   &__user-icon-patch {
     fill: $mercury;
 
-    &--hovered {
+    &--blue {
       fill: $ship;
     }
   }
@@ -88,7 +89,7 @@
   &__user-text {
     font-size: 12px;
 
-    &--hovered {
+    &--blue {
       color: $chambray;
     }
   }

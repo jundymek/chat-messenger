@@ -6,7 +6,7 @@ type AppProps = {
 export function UserImage({ isBlue }: AppProps) {
   return (
     <svg
-      className={isBlue ? `user-image user-image--hovered` : `user-image`}
+      className={isBlue ? `user-image user-image--blue` : `user-image`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
     >

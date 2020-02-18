@@ -30,7 +30,7 @@ function LoginButton({ label, setUsername }: Props) {
         <div className="login__user-icon-wrapper">
           <UserImage isBlue={isBlue}/>
         </div>
-        <span className={isBlue ? `login__user-text login__user-text--hovered` : `login__user-text`}>{label}</span>
+        <span className={isBlue ? `login__user-text login__user-text--blue` : `login__user-text`}>{label}</span>
       </div>
     </button>
   );
