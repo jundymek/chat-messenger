@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chat-bot-typescript/static/css/main.fc89df64.chunk.css",
+    "main.css": "/chat-bot-typescript/static/css/main.72b0035c.chunk.css",
     "main.js": "/chat-bot-typescript/static/js/main.389d0ea4.chunk.js",
     "main.js.map": "/chat-bot-typescript/static/js/main.389d0ea4.chunk.js.map",
     "runtime-main.js": "/chat-bot-typescript/static/js/runtime-main.54005e9f.js",
@@ -8,15 +8,15 @@
     "static/js/2.740c53f8.chunk.js": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js",
     "static/js/2.740c53f8.chunk.js.map": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js.map",
     "index.html": "/chat-bot-typescript/index.html",
-    "precache-manifest.f26c0df94a0f91f438536b034ad00b01.js": "/chat-bot-typescript/precache-manifest.f26c0df94a0f91f438536b034ad00b01.js",
+    "precache-manifest.2a9cc5644cad67ad47b39f2a774206cc.js": "/chat-bot-typescript/precache-manifest.2a9cc5644cad67ad47b39f2a774206cc.js",
     "service-worker.js": "/chat-bot-typescript/service-worker.js",
-    "static/css/main.fc89df64.chunk.css.map": "/chat-bot-typescript/static/css/main.fc89df64.chunk.css.map",
+    "static/css/main.72b0035c.chunk.css.map": "/chat-bot-typescript/static/css/main.72b0035c.chunk.css.map",
     "static/js/2.740c53f8.chunk.js.LICENSE.txt": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.54005e9f.js",
     "static/js/2.740c53f8.chunk.js",
-    "static/css/main.fc89df64.chunk.css",
+    "static/css/main.72b0035c.chunk.css",
     "static/js/main.389d0ea4.chunk.js"
   ]
 }
