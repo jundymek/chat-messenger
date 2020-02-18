@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 
 export type Props = {
   allMessages: string[][];
+  loggedUser: string;
 };
 
-export function Messages({ allMessages }: Props) {
+export function Messages({ allMessages, loggedUser }: Props) {
   const messagesEnd = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -14,10 +15,10 @@ export function Messages({ allMessages }: Props) {
   }, [allMessages]);
 
   const getMessageClass = (username: string) => {
-    if (username === "John Doe") {
-      return "User1";
-    } else {
+    if (username === loggedUser) {
       return "User2";
+    } else {
+      return "User1";
     }
   };
 

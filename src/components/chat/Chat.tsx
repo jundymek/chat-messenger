@@ -23,7 +23,7 @@ function Chat({ username, setUsername }: Props) {
           </div>
           <h5 className="chat__header-title">{username === "John Doe" ? "John Smith" : "John Doe"}</h5>
         </div>
-        <Messages allMessages={allMessages} />
+        <Messages allMessages={allMessages} loggedUser={username} />
       </section>
       <MessageForm username={username} allMessages={allMessages} setAllMessages={setAllMessages} />
     </div>
