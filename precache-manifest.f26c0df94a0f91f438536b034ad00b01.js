@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a52806a0c80fd62a2e1ae3d00b17d4cf",
+    "revision": "977efe735dd7efa892616f4805bb8ee5",
     "url": "/chat-bot-typescript/index.html"
   },
   {
-    "revision": "4d7906e0de11a400ce4a",
-    "url": "/chat-bot-typescript/static/css/main.fed0adc1.chunk.css"
+    "revision": "994e9494931c74419a6a",
+    "url": "/chat-bot-typescript/static/css/main.fc89df64.chunk.css"
   },
   {
     "revision": "e14778502cf9ee0cb0bd",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d7906e0de11a400ce4a",
+    "revision": "994e9494931c74419a6a",
     "url": "/chat-bot-typescript/static/js/main.389d0ea4.chunk.js"
   },
   {
