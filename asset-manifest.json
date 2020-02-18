@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/chat-bot-typescript/static/css/main.b88ec80d.chunk.css",
-    "main.js": "/chat-bot-typescript/static/js/main.d7d0ea7f.chunk.js",
-    "main.js.map": "/chat-bot-typescript/static/js/main.d7d0ea7f.chunk.js.map",
-    "runtime-main.js": "/chat-bot-typescript/static/js/runtime-main.54005e9f.js",
-    "runtime-main.js.map": "/chat-bot-typescript/static/js/runtime-main.54005e9f.js.map",
-    "static/js/2.740c53f8.chunk.js": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js",
-    "static/js/2.740c53f8.chunk.js.map": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js.map",
-    "index.html": "/chat-bot-typescript/index.html",
-    "precache-manifest.0c90729f286a69021b46efa1ed96bd4d.js": "/chat-bot-typescript/precache-manifest.0c90729f286a69021b46efa1ed96bd4d.js",
-    "service-worker.js": "/chat-bot-typescript/service-worker.js",
-    "static/css/main.b88ec80d.chunk.css.map": "/chat-bot-typescript/static/css/main.b88ec80d.chunk.css.map",
-    "static/js/2.740c53f8.chunk.js.LICENSE.txt": "/chat-bot-typescript/static/js/2.740c53f8.chunk.js.LICENSE.txt"
+    "main.css": "/chat-messenger/static/css/main.b88ec80d.chunk.css",
+    "main.js": "/chat-messenger/static/js/main.d326df17.chunk.js",
+    "main.js.map": "/chat-messenger/static/js/main.d326df17.chunk.js.map",
+    "runtime-main.js": "/chat-messenger/static/js/runtime-main.7c14cccd.js",
+    "runtime-main.js.map": "/chat-messenger/static/js/runtime-main.7c14cccd.js.map",
+    "static/js/2.740c53f8.chunk.js": "/chat-messenger/static/js/2.740c53f8.chunk.js",
+    "static/js/2.740c53f8.chunk.js.map": "/chat-messenger/static/js/2.740c53f8.chunk.js.map",
+    "index.html": "/chat-messenger/index.html",
+    "precache-manifest.5b45e55b5018a0832260a4e66b73185d.js": "/chat-messenger/precache-manifest.5b45e55b5018a0832260a4e66b73185d.js",
+    "service-worker.js": "/chat-messenger/service-worker.js",
+    "static/css/main.b88ec80d.chunk.css.map": "/chat-messenger/static/css/main.b88ec80d.chunk.css.map",
+    "static/js/2.740c53f8.chunk.js.LICENSE.txt": "/chat-messenger/static/js/2.740c53f8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.54005e9f.js",
+    "static/js/runtime-main.7c14cccd.js",
     "static/js/2.740c53f8.chunk.js",
     "static/css/main.b88ec80d.chunk.css",
-    "static/js/main.d7d0ea7f.chunk.js"
+    "static/js/main.d326df17.chunk.js"
   ]
 }
