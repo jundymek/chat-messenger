@@ -13,6 +13,10 @@ interface Props {
 function Chat({ username, setUsername }: Props) {
   const [allMessages, setAllMessages] = useLocalStorage("chatMessages", []);
 
+  function getName(username: string): React.ReactNode {
+    return username === "John Doe" ? "John Smith" : "John Doe";
+  }
+  
   return (
     <div className="chat-window">
       <Header username={username} setUsername={setUsername} />
@@ -21,13 +25,14 @@ function Chat({ username, setUsername }: Props) {
           <div className="chat__header-img">
             <UserImage />
           </div>
-          <h5 className="chat__header-title">{username === "John Doe" ? "John Smith" : "John Doe"}</h5>
+          <h5 className="chat__header-title">{getName(username)}</h5>
         </div>
         <Messages allMessages={allMessages} loggedUser={username} />
       </section>
       <MessageForm username={username} allMessages={allMessages} setAllMessages={setAllMessages} />
     </div>
   );
+
 }
 
 export default Chat;
