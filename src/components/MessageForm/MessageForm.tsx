@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, FormEvent } from "react";
 
 export interface Props {
   username: string;
@@ -10,7 +10,7 @@ export function MessageForm({ username, allMessages, setAllMessages }: Props) {
   const [message, setMessage] = useState<string>("");
   const inputValue = useRef<HTMLTextAreaElement>(null);
 
-  const handleSubmit = (e: any, username: string, message: string) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>, username: string, message: string) => {
     e.preventDefault();
     setAllMessages(prevState => [...prevState, [username, message]]);
     if (inputValue.current) {
@@ -18,15 +18,23 @@ export function MessageForm({ username, allMessages, setAllMessages }: Props) {
     }
   };
 
+  function handleOnChange(): ((event: React.ChangeEvent<HTMLTextAreaElement>) => void) | undefined {
+    return (e: any) => setMessage(e.currentTarget.value);
+  }
+
   return (
     <form className="message-form" onSubmit={e => handleSubmit(e, username, message)}>
       <textarea
         className="message-form__input"
         placeholder="write message..."
         ref={inputValue}
-        onChange={(e: any) => setMessage(e.target.value)}
+        onChange={handleOnChange()}
       />
-      <div className="message-form__button-wrapper"><button className="message-form__button">send</button></div>
+      <div className="message-form__button-wrapper">
+        <button type="submit" className="message-form__button">
+          send
+        </button>
+      </div>
     </form>
   );
 }
