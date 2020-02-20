@@ -1,9 +1,9 @@
 import React from "react";
 
 type AppProps = {
-  isBlue: boolean;
+  isBlue?: boolean;
 };
-export function UserImage({ isBlue }: AppProps) {
+export function UserImage({ isBlue=false }: AppProps) {
   return (
     <svg
       className={isBlue ? `user-image user-image--blue` : `user-image`}

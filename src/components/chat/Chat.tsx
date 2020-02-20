@@ -19,7 +19,7 @@ function Chat({ username, setUsername }: Props) {
       <section className="chat">
         <div className="chat__header">
           <div className="chat__header-img">
-            <UserImage isBlue={false} />
+            <UserImage />
           </div>
           <h5 className="chat__header-title">{username === "John Doe" ? "John Smith" : "John Doe"}</h5>
         </div>
